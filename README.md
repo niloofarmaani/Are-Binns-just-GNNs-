@@ -7,6 +7,24 @@ The work is organized as three notebooks that run in order:
 - `01_graph_preparation.ipynb`: download/prepare TCGA + Reactome, build a layered (feedforward) graph.
 - `02_binn_exact_equivalence.ipynb`: implement a BINN-exact layered MPNN forward pass and verify numerical equivalence with a masked feedforward computation.
 - `03_training_and_comparison.ipynb`: train quick baselines and compare strict BINN-like variants to relaxed graph models.
+- ### `BINN_vs_GNN_TCGA_comparison.ipynb`
+
+Extends the experiments by training the **official BINN implementation** from the  
+[`binn`](https://github.com/infectionmedicineproteomics/binn) package.
+
+This allows direct comparison between:
+
+- the original BINN architecture
+- the BINN-as-GNN formulation
+- relaxed GNN variants
+- a dense gene-level baseline
+
+Metrics compared:
+
+- ROC-AUC
+- balanced accuracy
+- training speed
+- memory usage
 
 ## Main idea
 
