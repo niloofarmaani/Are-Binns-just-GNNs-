@@ -13,7 +13,7 @@ The work is organized as three notebooks that run in order:
 Reactome gives (1) gene to pathway membership and (2) pathway hierarchy (a directed acyclic graph). A classic BINN/VNN uses masked linear layers, one per hierarchy level. We build an equivalent layered graph where every edge goes from layer ℓ to layer ℓ+1 (by duplicating pathway nodes when needed), then run sequential message passing to match the masked feedforward schedule.
 
 ## Data and knowledge sources
-
+data is located at: https://drive.google.com/drive/folders/158aqRXnJK84neihJr1e-EWGHF5jYEsfq?usp=drive_link
 See `DATASET.md` for details.
 
 Important: large raw datasets are not committed to GitHub. The notebooks download public Reactome files and expect TCGA expression/phenotype files to exist locally (or in Google Drive) depending on your workflow.
