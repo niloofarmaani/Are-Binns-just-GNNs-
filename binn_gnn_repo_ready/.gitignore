@@ -1,0 +1,25 @@
+# data / artifacts
+data/
+outputs/
+runs/
+wandb/
+
+# notebooks
+.ipynb_checkpoints/
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# tests / tooling
+.pytest_cache/
+.coverage
+htmlcov/
+
+# system
+.DS_Store
